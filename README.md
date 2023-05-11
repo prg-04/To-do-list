@@ -65,8 +65,8 @@ Use the following Commands:
 ### Install
 
 Install this project with:
-    - git clone https://github.com/prg-04/To-do-list
-    -Next run npm install --legacy-peer-deps to install the dependencies
+  - git clone https://github.com/prg-04/To-do-list
+  - Next run npm install --legacy-peer-deps to install the dependencies
 ### Usage
 
 - Open your text editor of choice and open the /dist folder and run index.html using a live server to use the website
