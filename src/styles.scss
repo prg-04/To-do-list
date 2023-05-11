@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80%;
+  height: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    width: 100%;
+
+    #reloadImg {
+      width: 15px;
+      height: 15px;
+      object-fit: fill;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: rotate(360deg) scale(1.05);
+      }
+    }
+  }
+  #form {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    // margin: 0 1rem;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+
+    input {
+      width: 95%;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    #addBtn {
+      width: 45px;
+      border: none;
+      position: relative;
+      right: -0.8rem;
+      background-color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      img {
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  #list {
+    width: 100%;
+    gap: 1rem;
+    .list-group-item {
+      padding: 0 1rem;
+      margin: 1rem 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+
+      div {
+        height: 3rem;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .dots {
+        height: 15px;
+        width: 15px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  #clearBtn {
+    width: 100%;
+    height: 3rem;
+    border: none;
+  }
+
+  .error {
+    color: red;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #c3c3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  #container {
+    width: 60%;
+  }
+}

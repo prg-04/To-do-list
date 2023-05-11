@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div class="heading">
+        <h3>Today's To Do</h3>
+        <img id="reloadImg" alt="reload" />
+      </div>
+      <form action="" id="form">
+        <input id="input" type="text" placeholder="Add to your list..." />
+        <button id="addBtn" class="addBtn" type="submit"></button>
+      </form>
+
+      <ul id="list" class="list"></ul>
+      <button id="clearBtn">Clear all completed</button>
+    </div>
+  </body>
+</html>
