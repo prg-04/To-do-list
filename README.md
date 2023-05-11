@@ -65,6 +65,7 @@ Use the following Commands:
 ### Install
 
 Install this project with:
+
   - git clone https://github.com/prg-04/To-do-list
   - Next run npm install --legacy-peer-deps to install the dependencies
 ### Usage
