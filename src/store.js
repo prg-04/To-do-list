@@ -1,18 +1,16 @@
 class Store {
   static getList() {
-    let list;
-    if (localStorage.getItem("list") === null) {
-      return (list = []);
-    } else {
-      list = JSON.parse(localStorage.getItem("list"));
+    const list = localStorage.getItem('list');
+    if (list === null) {
+      return [];
     }
-    return list;
+    return JSON.parse(list);
   }
 
   static addList(list) {
     const lists = Store.getList();
     lists.push(list);
-    localStorage.setItem("list", JSON.stringify(lists));
+    localStorage.setItem('list', JSON.stringify(lists));
   }
 
   static removeList(id) {
@@ -21,7 +19,7 @@ class Store {
 
     if (index !== -1) {
       lists.splice(index, 1);
-      localStorage.setItem("list", JSON.stringify(lists));
+      localStorage.setItem('list', JSON.stringify(lists));
     }
   }
 }
